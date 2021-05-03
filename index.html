@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 in a row</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(235, 227, 213);
+            font-family: -apple-system,
+                BlinkMacSystemFont,
+                Roboto,
+                "Helvetica Neue",
+                sans-serif;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        #game {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 5rem;
+            margin-bottom: 2rem;
+        }
+
+        table {
+            width: fit-content;
+            height: fit-content;
+            box-sizing: border-box;
+            table-layout: fixed;
+        }
+
+        td {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            padding: 0;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+        .gamer1 {
+            background-color: red;
+        }
+
+        .gamer2 {
+            background-color: yellow;
+
+
+        }
+
+        .swal-overlay {
+            background-color: rgba(43, 165, 137, 0.45);
+        }
+
+        .swal-text {
+            text-align: center;
+            color: #61534e;
+            font-family: inherit;
+            font-size: 2rem;
+        }
+    </style>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div id="game">
+        <h1>
+            <span style="color: red">5</span>
+            <span style="color: orange">i</span><span style="color: yellow">n</span>
+            <span style="color: green">a</span>
+            <span style="color: cyan">R</span><span style="color: purple">o</span><span
+                style="color: rgb(238, 82, 238)">w</span>
+        </h1>
+        <table class="field"></table>
+    </div>
+    <script></script>
+</body>
+
+</html>
